@@ -61,7 +61,7 @@ document.getElementById('place').value=`${obj.search}`;
   
       console.log(beforedate);
   
-      // API_KEY = "AIzaSyDpL0NJ_WLy89W2FfQ1kLWwikVin1iCF8A";
+     
   
       var url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}
           &part=snippet&q=${search}&maxResults=${maxResults}&publishedAfter=${afterdate}&publishedBefore=${beforedate}&order=${order}&videoDuration=${duration}&type=video`;
