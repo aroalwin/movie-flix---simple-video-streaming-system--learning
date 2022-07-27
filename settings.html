@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Flix
+    </title>
+    <meta name="robots" content="noindex" />
+ <!--matterila icons-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- GOOGLE FONTS -->
+
+ <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+ <!-- OWL CAROUSEL -->
+ <link rel="stylesheet" href="owl.carousel.min.css" />
+ <!-- BOX ICONS -->
+ <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+ <link href="bootstrap.min.css" rel="stylesheet" >
+ <!-- APP CSS -->
+ <link rel="stylesheet" href="grid.css">
+ <link rel="stylesheet" href="app.css">
+ <link rel="stylesheet" href="style.css">
+ <!--Firestore Libraries-->
+<!--Firestore Libraries-->
+<script src="firebase-app.js"></script>
+
+<script src="firebase-firestore.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- NAV -->
+     <div class="nav-wrapper">
+        <div class="container">
+       <div class="nav">
+           <div class="mar"></div>
+          
+               <a href="#" class="logo">
+                    <img src="images/logo1.png" width="50px"height="40px"><span style="color: red;">Fl</span><span style="color:yellow">i</span><span style="color: red;">x</span>
+                </a>
+                <!--<ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Genre</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul> -->
+                <!-- MOBILE MENU TOGGLE -->
+                 <!--<div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>-->
+            </div>
+        </div>
+    </div> 
+    <!-- END NAV -->
+<!--breadcum-->
+<div class="banner-area banner-bg-1"data-aos="flip-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner">
+            <h2>Settings</h2>
+            <ul class="page-title-link">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Settings</a></li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end breadcum-->
+
+<br>
+<div data-video="jONeO8x3Tw4"
+         data-autoplay="1"
+         data-loop="1"
+         id="youtube-audio" style="display:none">
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <!--bottom navbar-->
+<nav class="nav1">
+    <a href="index.html" class="nav1__link va1__link">
+      <i class="material-icons nav1__icon">home</i>
+      <span class="nav1__text">Home</span>
+    </a>
+    <a href="cat.html" class="nav1__link nav1__link">
+      <i class="material-icons nav1__icon">dashboard</i>
+      <span class="nav1__text">Catagory</span>
+    </a>
+    <!-- <a href="#" class="nav1__link">
+      <i class="material-icons nav1__icon">devices</i>
+      <span class="nav1__text">Devices</span>
+    </a>
+    <a href="#" class="nav1__link">
+      <i class="material-icons nav1__icon">lock</i>
+      <span class="nav1__text">Privacy</span>
+    </a> -->
+    <a href="settings.html" class="nav1__link nav1__link--active">
+      <i class="material-icons nav1__icon">settings</i>
+      <span class="nav1__text">Settings</span>
+    </a>
+  </nav>
+  <!--end bottom nav bar-->
+  
+  
+  
+    
+       <!-- COPYRIGHT SECTION -->
+       <div class="copyright">
+          designed And Developed By Arockia Alwin 
+      </div>
+      <!-- END COPYRIGHT SECTION -->
+  
+  <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="jquery.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="owl.carousel.min.js" ></script>
+    <script src="bootstrap.bundle.min.js" ></script>
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+   
+
+  
+<script src="firebase.js"></script>
+  
+<script src="song.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script >function onYouTubeIframeAPIReady(){var e=document.getElementById("youtube-audio"),t=document.createElement("img");t.setAttribute("id","youtube-icon"),t.style.cssText="cursor:pointer;cursor:hand",e.appendChild(t);var a=document.createElement("div");a.setAttribute("id","youtube-player"),e.appendChild(a);var o=function(e){var a=e?"IDzX9gL.png":"quyUPXN.png";t.setAttribute("src","https://i.imgur.com/"+a)};e.onclick=function(){r.getPlayerState()===YT.PlayerState.PLAYING||r.getPlayerState()===YT.PlayerState.BUFFERING?(r.pauseVideo(),o(!1)):(r.playVideo(),o(!0))};var r=new YT.Player("youtube-player",{height:"0",width:"0",videoId:e.dataset.video,playerVars:{autoplay:e.dataset.autoplay,loop:e.dataset.loop},events:{onReady:function(e){r.setPlaybackQuality("small"),o(r.getPlayerState()!==YT.PlayerState.CUED)},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o(!1)}}})}</script>
+
+
+<!--react-->
+<!-- <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script> -->
+  
+  </body>
+  
+  </html>

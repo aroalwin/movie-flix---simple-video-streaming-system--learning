@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Flix
+    </title>
+    <meta name="robots" content="noindex" />
+    <!--matterila icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="bootstrap.min.css" rel="stylesheet" >
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Firestore Libraries-->
+<!--Firestore Libraries-->
+<script src="firebase-app.js"></script>
+
+<script src="firebase-firestore.js"></script>
+
+</head>
+
+<body >
+ 
+    <!-- NAV -->
+     <div class="nav-wrapper">
+        <div class="container">
+        
+       <div class="nav">
+      
+           
+          
+            
+      
+       
+               <a href="#" class="logo ">
+                    <img src="images/logo1.png" width="50px"height="40px"><span style="color: red;">Fl</span><span style="color:yellow">i</span><span style="color: red;">x</span>
+                </a>
+                <!-- <form action="search.html?" class="search-bar">
+                    <input type="search" name="search" pattern=".*\S.*" placeholder="Search for tamil songs"required>
+                    <button class="search-btn" type="submit"> 
+                        <span style="color: white;">Search</span>
+                    </button>
+                </form>  -->
+              
+                <div id="filter-records"></div>
+                <!--<ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Genre</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul> -->
+                <!-- MOBILE MENU TOGGLE -->
+                 <!--<div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>-->
+               
+            </div>
+           
+        </div>
+        
+    </div> 
+    <!-- END NAV -->
+
+    <div class="mar"></div>
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <!-- HERO SLIDE -->
+        <div class="hero-slide">
+           
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+ <!-- SLIDE ITEM -->
+ <div class="hero-slide-item">
+    <img src="https://i.ytimg.com/vi/Gi83R8jEqZU/maxresdefault.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="hero-slide-item-content">
+        <div class="item-content-wraper">
+            <div class="item-content-title top-down">
+                Valimai Official Trailer
+            </div>
+            <div class="movie-infos top-down delay-2">
+                <div class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>.</span>
+                </div>
+                <div class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>3.15 min</span>
+                </div>
+                <div class="movie-info">
+                    <span>HD</span>
+                </div>
+                <div class="movie-info">
+                    <span>16+</span>
+                </div>
+            </div>
+            <div class="item-content-description top-down delay-4">
+                Ajith Kumar | Yuvan Shankar Raja | Vinoth | Boney Kapoor | Zee Studios                        </div>
+            <div class="item-action top-down delay-6">
+                <a href="javascript:;" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#beast">
+                    <i class="bx bxs-right-arrow"></i>
+                    <span>Watch now</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SLIDE ITEM -->
+                 <!-- SLIDE ITEM -->
+                 <div class="hero-slide-item">
+                    <img src="https://i.ytimg.com/vi/g61CWQ_WoeE/maxresdefault.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                My Dear Bootham - Official Trailer 
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>.</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>1.51 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>+</span>
+                                </div>
+                            </div>
+                            <div class="item-content-description top-down delay-4">
+                                Prabhudeva, Ramya Nambessan | N Ragavan | D.Imman
+                               </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="javascript:;" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#valimai">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                
+
+
+                <!-- SLIDE ITEM -->
+  <div class="hero-slide-item">
+    <img src="https://i.ytimg.com/vi/1F8W-d1Kuw4/hqdefault.jpg" alt="">
+    <div class="overlay"></div>
+    <div class="hero-slide-item-content">
+        <div class="item-content-wraper">
+            <div class="item-content-title top-down">
+                Theal - Official Trailer 
+            </div>
+            <div class="movie-infos top-down delay-2">
+                <div class="movie-info">
+                    <i class="bx bxs-star"></i>
+                    <span>.</span>
+                </div>
+                <div class="movie-info">
+                    <i class="bx bxs-time"></i>
+                    <span>1.44 min</span>
+                </div>
+                <div class="movie-info">
+                    <span>HD</span>
+                </div>
+                <div class="movie-info">
+                    <span>16+</span>
+                </div>
+            </div>
+            <div class="item-content-description top-down delay-4">
+                New Tamil Movie 2021 | Amazon Prime Video
+
+            </div>
+            <div class="item-action top-down delay-6">
+                <a href="javascript:;" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#spider">
+                    <i class="bx bxs-right-arrow"></i>
+                    <span>Watch now</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SLIDE ITEM -->
+                 
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="https://i.ytimg.com/vi/Uw17HJkrGR0/maxresdefault.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                VIKRAM - The First Glance 
+                            </div>
+                            <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>.</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>0.48 sec</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                            <div class="item-content-description top-down delay-4">
+                                Kamal Haasan | Lokesh Kanagaraj | Anirudh Ravichander
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="javascript:;" class="btn btn-hover" data-bs-toggle="modal" data-bs-target="#kgf">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+              
+  
+                
+
+
+            </div>
+        </div>
+        <!-- END HERO SLIDE -->
+        <div id="from-server"></div>
+        <!-- TOP MOVIES SLIDE -->
+     
+            <div class="container">
+        <div class="section-header" >
+            Featured Movies <a href="cat.html" class="a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                More ➡️
+            </a>
+           
+        </div>
+ 
+        <div class="top-movies-slide"id="firee">
+           
+                
+            <div class="owl-carousel" id="top-movies-slide">
+                 <!-- MOVIE ITEM -->
+                 <div class="movie-item">
+                    <a href="play.html?id=H7GX3xi43nQ"><img src="https://i.ytimg.com/vi/H7GX3xi43nQ/hqdefault.jpg" alt="">
+       
+                    
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Kannum Kannum Kollaiyadithaal
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.33.56 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <!-- END MOVIE ITEM -->
+                 <!-- MOVIE ITEM -->
+                 <!-- <div class="movie-item">
+                    <a target="_blank"  href="https://www.amazon.in/gp/product/B07PR1CL3S/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07PR1CL3S&linkCode=as2&tag=aaaarotech0f-21&linkId=a610ef549ca455e2e8597606f063b256"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B07PR1CL3S&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=aaaarotech0f-21" >       
+                    
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            boAt Rockerz 450 Wireless Bluetooth Headphone
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span></span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>Advertisment</span>
+                            </div>
+                            <div class="movie-info">
+                                <span></span>
+                            </div>
+                            <div class="movie-info">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div></a>
+                </div> -->
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <a href="play.html?id=Nhp9RC-Vpew"><img src="https://i.ytimg.com/vi/Nhp9RC-Vpew/hqdefault.jpg" alt="">
+       
+                    
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Imsai Arasan 23 M Pulikesi
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.19.21 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <!-- END MOVIE ITEM -->
+                 <!-- MOVIE ITEM -->
+                 <div class="movie-item">
+                    <a href="play.html?id=ooY-SMww3-0"><img src="https://i.ytimg.com/vi/ooY-SMww3-0/hqdefault.jpg" alt="">
+       
+                    
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Aadhavan Full Movie
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.46.34 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <!-- END MOVIE ITEM -->
+                
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <a href="play.html?id=HALew4VNVNE"><img src="https://i.ytimg.com/vi/HALew4VNVNE/hqdefault.jpg" alt="">
+       
+                    
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Varuthapadatha Valibar Sangam
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.29.07 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <!-- END MOVIE ITEM -->
+                    <!-- MOVIE ITEM -->
+                    <div class="movie-item">
+                        <a href="play.html?id=rtIGYfUoffo"><img src="https://i.ytimg.com/vi/rtIGYfUoffo/hqdefault.jpg" alt="">
+           
+                        
+                        <div class="movie-item-content">
+                            <div class="movie-item-title">
+                                Vetrivel Sakthivel
+                            </div>
+                            <div class="movie-infos">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>2.35.35 hr</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <a href="play.html?id=eeipaMt4Wpg"><img src="https://i.ytimg.com/vi/eeipaMt4Wpg/hqdefault.jpg" alt="">
+       
+                    
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Saamy
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.39.49 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+                <!-- END MOVIE ITEM -->
+               <!-- MOVIE ITEM -->
+               <div class="movie-item">
+                <a href="play.html?id=Dg2yPAbNOgs"><img src="https://i.ytimg.com/vi/Dg2yPAbNOgs/hqdefault.jpg" alt="">
+   
+                
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Vettai 
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>2.43.31 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+            <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+        <!-- END TOP MOVIES SLIDE -->
+    </div>
+    <!-- END HERO SECTION -->
+   <!-- WEB SERIES SECTION -->
+  <div class="section">
+    <div class="container">
+        <div class="section-header">
+             Web Series
+            <a href="series/series.htm?file=Lockdown-Kadhal" class="a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                More ➡️
+            </a>
+        </div>
+        <div class="movies-slide carousel-nav-center owl-carousel">
+            <!-- MOVIE ITEM -->
+            <a href="series/series.htm?file= Niraimaatha-Nilavae" class="movie-item">
+                <img src="https://i.ytimg.com/vi/bS7RG89Nh2M/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Niraimaatha Nilavae
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>web series</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+              <!-- MOVIE ITEM -->
+              <a href="series/series.htm?file=MSD" class="movie-item">
+                <img src="https://i.ytimg.com/vi/YBJYvGhnnHo/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        MSD Mini Web Series
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>web series</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+                 <!-- MOVIE ITEM -->
+                 <a href="series/series.htm?file=Lakshmi-Nagar" class="movie-item">
+                    <img src="https://i.ytimg.com/vi/5PN0ujBS8Xw/hqdefault.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Lakshmi Nagar (horror)
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>web series</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                      <!-- MOVIE ITEM -->
+            <a href="series/series.htm?file=Lockdown-Kadhal" class="movie-item">
+                <img src="https://i.ytimg.com/vi/WhVq7kMsehE/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Lockdown Kadhal
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>web series</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+                  <!-- MOVIE ITEM -->
+                  <a href="series/series.htm?file=Dear-Friends" class="movie-item">
+                    <img src="https://i.ytimg.com/vi/izm3eaTG57c/hqdefault.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Dear Friends
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>web series</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                      <!-- MOVIE ITEM -->
+            <a href="series/series.htm?file=Panchathanthiram" class="movie-item">
+                <img src="https://i.ytimg.com/vi/VVsgs7IrnDg/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Panchathanthiram
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>web series</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+        </div>
+    </div>
+</div>
+<!-- END web series SECTION -->
+
+ <!-- comedy senseSECTION -->
+ <div class="section">
+    <div class="container">
+        <div class="section-header">
+            comedy scenes
+            <a href="series/series.htm?file=vadivelu" class="a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                More ➡️
+            </a>
+        </div>
+        <div class="movies-slide carousel-nav-center owl-carousel">
+            <!-- MOVIE ITEM -->
+            <a href="series/series.htm?file=vadivelu" class="movie-item">
+                <img src="https://i.ytimg.com/vi/d2kh4UUBoPo/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Vadivelu Comedy scenes
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>... hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="series/series.htm?file=vivek" class="movie-item">
+                <img src="https://i.ytimg.com/vi/ilK9oOdN1DQ/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        vivek Comedy scenes
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>....hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+             <!-- MOVIE ITEM -->
+             <a href="series/series.htm?file=govundamani" class="movie-item">
+                <img src="https://i.ytimg.com/vi/i0Q9xyZY0Yo/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Goundamani Comedy scenes
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>... hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+              <!-- MOVIE ITEM -->
+              <a href="series/series.htm?file=tamil-comedy" class="movie-item">
+                <img src="https://i.ytimg.com/vi/OXFLM6L6OQU/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Comedy scenes
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>.... hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+             <!-- MOVIE ITEM -->
+             <a href="play.html?id=o0ZJJman38M" class="movie-item">
+                <img src="https://i.ytimg.com/vi/o0ZJJman38M/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        (SOORI) LATEST NON STOP FUNNY SCENES TAMIL MOVIE COMEDY
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>1.02.17 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+           
+        </div>
+    </div>
+</div>
+<!-- END comedy sence SECTION -->
+  <!-- LATEST MOVIES SECTION -->
+  <div class="section">
+    <div class="container">
+        <div class="section-header">
+            popular movies
+            <a href="series/series.htm?file=popular" class="a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                More ➡️
+            </a>
+        </div>
+        <div class="movies-slide carousel-nav-center owl-carousel">
+            <!-- MOVIE ITEM -->
+            <a href="play.html?id=UX0eYXM0dS0" class="movie-item">
+                <img src="https://i.ytimg.com/vi/UX0eYXM0dS0/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Ivan Vera Mathiri
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>2.24.51 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="play.html?id=0QkDdt1xjl4" class="movie-item">
+                <img src="https://i.ytimg.com/vi/0QkDdt1xjl4/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Paiyaa 
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>2.31.18 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+             <!-- MOVIE ITEM -->
+             <a href="play.html?id=3QGzJr_137I" class="movie-item">
+                <img src="https://i.ytimg.com/vi/3QGzJr_137I/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Sathuranka Vettai  
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>2.29.06 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+              <!-- MOVIE ITEM -->
+              <a href="play.html?id=ZxFeqzcZeY4" class="movie-item">
+                <img src="https://i.ytimg.com/vi/ZxFeqzcZeY4/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Jigina 
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>1.51.51 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+             <!-- MOVIE ITEM -->
+             <a href="play.html?id=HRL5B0VmPTc" class="movie-item">
+                <img src="https://i.ytimg.com/vi/HRL5B0VmPTc/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Yennai Arindhaal  
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>2.48.39 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+            <!-- MOVIE ITEM -->
+            <a href="play.html?id=RYWhOTR7Wgc" class="movie-item">
+                <img src="https://i.ytimg.com/vi/RYWhOTR7Wgc/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Trisha Illana Nayanthara  
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>1.58.26 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>18+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+           <!-- MOVIE ITEM -->
+           <a href="play.html?id=zHolXSYi8TU" class="movie-item">
+            <img src="https://i.ytimg.com/vi/zHolXSYi8TU/hqdefault.jpg" alt="">
+            <div class="movie-item-content">
+                <div class="movie-item-title">
+                    Yaamirukka Bayamey  
+                </div>
+                <div class="movie-infos">
+                    <div class="movie-info">
+                        <i class="bx bxs-star"></i>
+                        <span>9.5</span>
+                    </div>
+                    <div class="movie-info">
+                        <i class="bx bxs-time"></i>
+                        <span>2.00.24 hr</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="movie-info">
+                        <span>18+</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <!-- END MOVIE ITEM -->
+        </div>
+    </div>
+</div>
+<!-- END LATEST MOVIES SECTION -->
+
+    <!-- LATEST CARTOONS SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                90's Movies     <a href="catde.html?cat=90s" class="a">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    More ➡️
+                </a>
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="play.html?id=mR4P8E3HVHw" class="movie-item">
+                    <img src="https://i.ytimg.com/vi/mR4P8E3HVHw/hqdefault.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Thiruvilayadal Aarambam
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.29.07 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+             
+                  <!-- MOVIE ITEM -->
+               <a href="play.html?id=RhYiXyck8Hg" class="movie-item">
+                <img src="https://i.ytimg.com/vi/RhYiXyck8Hg/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Irumbu Kottai Murattu Singam
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>2.22.57 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+               <a href="play.html?id=U3x8HzP1ijg" class="movie-item">
+                <img src="https://i.ytimg.com/vi/U3x8HzP1ijg/hqdefault.jpg" alt="">
+                <div class="movie-item-content">
+                    <div class="movie-item-title">
+                        Vaseegara
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>2.50.49 hr</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="play.html?id=8KFzN2SBlcg" class="movie-item">
+                    <img src="https://i.ytimg.com/vi/8KFzN2SBlcg/hqdefault.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Vathiyar
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.49.46 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="play.html?id=v4Td7anDYRw" class="movie-item">
+                    <img src="https://i.ytimg.com/vi/v4Td7anDYRw/hqdefault.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Rhythm
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>2.46.36 hr</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    <!-- END LATEST CARTOONS SECTION -->
+
+
+      <!-- LATEST songs SECTION -->
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+               Video Songs
+               <a href="catde.html?cat=songs" class="a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                More ➡️
+            </a>
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel" id="song">
+               
+
+        
+            
+        <!--from json-->
+        
+         <!-- MOVIE ITEM -->
+<a href="series/series.htm?file=new-songs" class="movie-item">
+    <img src="https://i.ytimg.com/vi/auBq_Z6zWSE/hqdefault.jpg" alt="">
+    <div class="movie-item-content">
+        <div class="movie-item-title">
+            Now Trending - New Songs- 2021
+         
+        </div>
+        <div class="movie-infos">
+            <div class="movie-info">
+                <i class="bx bxs-star"></i>
+                <span>9.5</span>
+            </div>
+            <div class="movie-info">
+                <i class="bx bxs-time"></i>
+                <span>songs..</span>
+            </div>
+            <div class="movie-info">
+                <span>HD</span>
+            </div>
+            <div class="movie-info">
+                <span>16+</span>
+            </div>
+        </div>
+    </div>
+   </a>
+   <!-- END MOVIE ITEM -->
+         <!-- MOVIE ITEM -->
+<a href="series/series.htm?file=New-Songs-2021" class="movie-item">
+    <img src="https://i.ytimg.com/vi/Lyr6c84d5AI/hqdefault.jpg" alt="">
+    <div class="movie-item-content">
+        <div class="movie-item-title">
+            Now Trending -  Tamil Hit Songs- 2021
+         
+        </div>
+        <div class="movie-infos">
+            <div class="movie-info">
+                <i class="bx bxs-star"></i>
+                <span>9.5</span>
+            </div>
+            <div class="movie-info">
+                <i class="bx bxs-time"></i>
+                <span>songs..</span>
+            </div>
+            <div class="movie-info">
+                <span>HD</span>
+            </div>
+            <div class="movie-info">
+                <span>16+</span>
+            </div>
+        </div>
+    </div>
+   </a>
+   <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    <!-- END LATEST songs SECTION -->
+    <!--All Movies-->
+<br>
+    
+<!-- <div class="container">
+    <div class="section">
+        <div class="section-header">
+           All  movies
+          
+
+        </div>
+      <center>
+        <a href="allmovie.html"><button class="btn btn-danger ">load More
+
+            
+        </button></a></center>
+</div></div>
+    <br><br> -->
+
+    <!--end All Movies-->
+
+    <!-- SPECIAL MOVIE SECTION -->
+    <!-- <div class="section">
+        <div class="hero-slide-item">
+            <img src="./images/transformer-banner.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                    <div class="item-content-title">
+                        Transformer
+                    </div>
+                    <div class="movie-infos">
+                        <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                    <div class="item-content-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
+                    </div>
+                    <div class="item-action">
+                        <a href="#" class="btn btn-hover">
+                            <i class="bx bxs-right-arrow"></i>
+                            <span>Watch now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- END SPECIAL MOVIE SECTION -->
+
+  
+<!--bottom navbar-->
+<nav class="nav1">
+    
+    <a href="#" class="nav1__link nav1__link--active">
+      <i class="material-icons nav1__icon">home</i>
+      <span class="nav1__text">Home</span>
+    </a>
+    <a href="cat.html" class="nav1__link nav1__link">
+      <i class="material-icons nav1__icon">dashboard</i>
+      <span class="nav1__text">Catagory</span>
+    </a>
+    <!-- <a href="#" class="nav1__link">
+      <i class="material-icons nav1__icon">devices</i>
+      <span class="nav1__text">Devices</span>
+    </a>
+    <a href="#" class="nav1__link">
+      <i class="material-icons nav1__icon">lock</i>
+      <span class="nav1__text">Privacy</span>
+    </a> -->
+    <a href="settings.html" class="nav1__link">
+      <i class="material-icons nav1__icon">settings</i>
+      <span class="nav1__text">Settings</span>
+    </a>
+  </nav>
+<!--end bottom nav bar-->
+    <!--model section for hero-->
+<!-- Modal spider -->
+<div class="modal fade" id="spider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spider Man</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      <div  class="video-responsive" >
+            <iframe id="stop" width="400" height="402" src="https://www.youtube.com/embed/1F8W-d1Kuw4?rel=0&enablejsapi=1" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end spider-->
+
+<!-- Modal valimai -->
+<div class="modal fade" id="valimai" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Valimai</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div  class="video-responsive" >
+            <iframe id="stop"width="400" height="402" src="https://www.youtube.com/embed/g61CWQ_WoeE?rel=0&enablejsapi=1" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end valimai-->
+
+<!-- Modal beast -->
+<div class="modal fade" id="beast" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Beast</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div  class="video-responsive">
+            <iframe id="stop" width="400" height="402" src="https://www.youtube.com/embed/Gi83R8jEqZU?rel=0&enablejsapi=1" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end beast-->
+
+<!-- Modal kgf -->
+<div class="modal fade" id="kgf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"style="background-color:#0000">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">KGF -2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div  class="video-responsive" >
+            <iframe id="stop" width="400" height="402" src="https://www.youtube.com/embed/Uw17HJkrGR0?rel=0&enablejsapi=1" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!--end kgf-->
+    <!--end hero model-->
+  
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        designed And Developed By Arockia Alwin 
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="jquery.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="owl.carousel.min.js" ></script>
+    <script src="bootstrap.bundle.min.js" ></script>
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+    <script src="rocketdiwali.js"></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function() {
+                $('#firee').fireworks();
+            });
+        },3000);
+        </script>  -->
+
+        <script>
+              $( document ).ready( function() {
+
+              
+   
+        
+$('body').flurry({
+       character: '❄❅❆*⛄☃',
+  height: 500,
+  speed: 1400,
+  wind: 200,
+  windVariance: 220,
+  frequency: 20,
+  large: 40,
+  small: 4
+
+});     });
+
+        </script>
+  <script src="json-search.js"></script>
+<script src="firebase.js"></script>
+  
+<script src="song.js"></script>
+   
+<!--react-->
+<!-- <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script> -->
+
+</body>
+
+</html>
